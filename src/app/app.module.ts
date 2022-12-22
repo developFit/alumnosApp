@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.modules';
 import { AppComponent } from './app.component';
 import { ListaAlimnosComponent } from './pages/lista-alimnos/lista-alimnos.component';
 import { AlumnoService } from './services/alumno.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { AlumnoService } from './services/alumno.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
